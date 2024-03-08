@@ -11,6 +11,13 @@
 - Copy and paste it on jupyter notebook
 - Run it and Voila!
 
+### Another alterantive
+- Go to [DeepNote](https://deepnote.com/)
+- Sign in with a Google account
+- After set-up is done, click on [code](<img width="1027" alt="image" src="https://github.com/SHni99/Govtech_code/assets/96757889/33fbb2bd-3c52-40d3-b899-8f894107107c">)
+- Copy and paste this py.file into and run
+
+
 
 ## Testcases
 - Unit tests and results are shown in the testcase.txt
@@ -19,5 +26,17 @@
 - Number of people cannot be 0. If it is, users will have to run to reenter inputs again
 - Includes edge cases to return the function after user input negative value under expense
 
-## Architeture decision
-- Uses dictionary to store `names` and 
+## Architeture decision for part 1
+- Uses dictionary to store `names` and `amount` to link up the person and the amount that he/she has spent
+- `payors` and `recipients` act as stacks to update, such possibilities are taken:
+  * Remove from the stacks when the amount is zero
+  * Put back the pair into the top of the stack, (FIFO method)
+ 
+## Time and space complexity
+1. Time: O(nlogn)
+2. Space: O(n)
+
+## Variable Examples
+- expenses = {"Alice": "20", "Bob": "10, }
+- payors = 
+- recipients = 
