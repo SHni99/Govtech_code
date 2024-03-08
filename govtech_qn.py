@@ -52,11 +52,16 @@ def calculateTranscation(expenses, average):
     return transactions
 
 def main():
-    number_of_people = int(input("Enter the number of people: "))
+    
+    try:
+        number_of_people = int(input("Enter the number of people: "))
+    except ValueError:
+        print("Invalid input: Please enter a positive integer.")
+        return
     
     # Number of people has to be more than 0 for the program to run
     if number_of_people <= 0:
-        print("The number of people must be a positive integer.")
+        print("Invalid input: The number of people must be a positive integer.")
         
     
     expenses = {}
@@ -66,7 +71,11 @@ def main():
         
         name = input(f"Enter person {i+1} name: ")
             
-        expense = float(input(f"Enter the expense for {name}: "))
+        try:
+            expense = float(input(f"Enter the expense for {name}: "))
+        except ValueError:
+            print("Invalid input: Please enter a numeric value for expense.")
+            break
         
         if expense < 0:
             print("The expense cannot be a negative integer. Please try again")
