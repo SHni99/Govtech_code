@@ -11,11 +11,11 @@
 - Copy and paste it on jupyter notebook
 - Run it and Voila!
 
-### Another alterantive
+### Another alternative
 - Go to [DeepNote](https://deepnote.com/)
 - Sign in with a Google account
-- After set-up is done, click on code
-(<img width="1027" alt="image" src="https://github.com/SHni99/Govtech_code/assets/96757889/33fbb2bd-3c52-40d3-b899-8f894107107c">)
+- After set-up is done, click on <a href="https://github.com/SHni99/Govtech_code/assets/96757889/33fbb2bd-3c52-40d3-b899-8f894107107c" target="_blank">Code</a>
+
 - Copy and paste this py.file into and `run notebook`, located at the top right corner
 
 
@@ -26,7 +26,8 @@
 ## Assumptions for part 1
 - Number of people cannot be 0. If it is, users will have to run to reenter inputs again
 - Includes edge cases to return the function after user input negative value under expense
-
+- Considering integer and buffer overflow vulnerabilities is crucial for protecting against security threats, especially when dealing with languages that require manual memory management. In Python, however, these concerns are significantly mitigated due to its built-in safeguards like arbitrary-precision arithmetic for integers and automatic memory management. Nonetheless, for languages where developers have direct control over memory allocation and deal with fixed-size data types, such as C and C++, vigilance against integer and buffer overflow is essential for security.
+- Throw value error message to handle invalid inputs
 
 ## Architeture decision for part 1
 - Uses dictionary to store `names` and `amount` to link up the person and the amount that he/she has spent
