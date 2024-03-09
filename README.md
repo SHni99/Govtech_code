@@ -45,3 +45,41 @@
 - expenses = {'Alice': 10.0, 'Bob': 5.25, 'Charlie': 20.0, 'Dave': 50.5, 'Evan': 3.8, 'Felix': 0.0}
 - payors = [('Alice', -4.92), ('Bob', -9.67), ('Evan', -11.120000000000001), ('Felix', -14.92)]
 - recipients = [('Charlie', 5.08), ('Dave', 35.58)]
+
+
+# ER Diagram
+
+## Interpretation for part 2
+- A hotel staff can attend to none or many rooms.
+- A stay can only be booked by 1 guest
+- A booking is attached to 1 guest once confirmed
+- A guest can make multiple bookings
+- A guest can make a booking and choose to not stay
+- A room can only have one room type
+- A stay might not request for a service
+- A guest is allowed to book for many stay but at different period
+
+## Constraint
+- A guest cannot have 2 bookings at the same time
+- 1 room is tied to 1 booking
+- A room must be cleaned before the check in
+- Ensure guests personal details are correct and verified
+- Period of stay is within the booking period
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
